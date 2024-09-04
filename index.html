@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popeyes</title>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Favicon for desktop and mobile -->
+    <script src="https://kit.fontawesome.com/703816025f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="/img/favicon.ico">
+</head>
+
+<body>
+    <div id="header">
+        <div class="containers">
+            <div>
+            <nav>
+                <div class="logo">
+                    <a href="index.html"><img src="/img/ban.png" alt="Popeyes"></a>
+                    <a href="index.html"><img src="/img/logo.png" alt="Popeyes"></a>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#about-us">About Us</a></li>
+                    <li><a href="https://docs.google.com/forms/d/1YQP0GJQr07R3MXdFBtL3fdKIMcjsxU6vU3TJP1_nqEo/edit?usp=drivesdk">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars menu-btn" onclick="openmenu()"></i>
+            </div>
+            <div class="header-right">
+                <input type="text" placeholder="Search..." class="search-bar">
+                <a href="#order" class="btn-reserve">Order Online</a>
+            </div>
+            </nav>
+        </div>
+    </div>
+    
+
+<!-- ------------------------------HOME-------------------------------- -->
+    <div id="home">
+        <div class="banner">
+            <img src="/img/banner.jpg" alt="Wallpaper">
+        </div>
+    </div>
+
+    <!------------------------------MENU-------------------------------- -->
+
+    <div id="menu">
+        <!-- Menu content here -->
+         <!-- First collapsible section 1 -->
+        <div class="main_one">
+            <div class="collapsible-container" onclick="toggleCollapsible('collapsibleContent1')">
+                <div class="col-left">
+                    <img src="/img/Combo.webp" alt="Placeholder Image">
+                    <h3>Combo Meals</h3>
+                </div>
+                <div class="col-right">
+                    <button><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+            </div>
+            <div class="collapsible-content" id="collapsibleContent1">
+
+                <ul>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> The SandWich</div><span>₹ 99</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Golden BBQ Sandwich with bacon & Cheese</div><span>₹ 199</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Bacon & Cheese Sandwich</div><span>₹ 149</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Signature Chicken</div><span>₹ 99</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Tenders</div><span>₹ 99</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Wings</div><span>₹ 89</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Beverages</div><span>₹ 79</span></li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- Second collapsible section 2 -->
+        <div class="main_two">
+            <div class="collapsible-container" onclick="toggleCollapsible('collapsibleContent2')">
+                <div class="col-left">
+                    <img src="/img//Wings.webp" alt="Placeholder Image">
+                    <h3>Chicken Wings</h3>
+                </div>
+                <div class="col-right">
+                    <button><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+            </div>
+            <div class="collapsible-content" id="collapsibleContent2">
+                <ul>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Classic Boneless Wings</div><span>₹ 399</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Spicy Bone-In-Wings</div><span>₹ 399</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Mix & Match Wings</div><span>₹ 499</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Wing Flavour Sauces</div><span>₹ 49</span></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- First collapsible section 3 -->
+        <div class="main_one">
+            <div class="collapsible-container" onclick="toggleCollapsible('collapsibleContent3')">
+                <div class="col-left">
+                    <img src="/img/Signatre.webp" alt="Placeholder Image">
+                    <h3>Signature Chicken</h3>
+                </div>
+                <div class="col-right">
+                    <button><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+            </div>
+            <div class="collapsible-content" id="collapsibleContent3">
+                <ul>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> 2pc Signature Chicken</div><span>₹ 119</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> 3pc Signature Chicken</div><span>₹ 229</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> 4pc Signature Chicken</div><span>₹ 339</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> 8pc Signature Chicken</div><span>₹ 449</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> 8pc Chicken Family Meal</div><span>₹ 499</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> 12pc Signature Chicken</div><span>₹ 749</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> 12pc Chicken Family Meal</div><span>₹ 799</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> 16pc Signature Chicken</div><span>₹ 999</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> 16pc Chicken Family Meal</div><span>₹ 999</span></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <!-- Second collapsible section 4 -->
+        <div class="main_two">
+            <div class="collapsible-container" onclick="toggleCollapsible('collapsibleContent4')">
+                <div class="col-left">
+                    <img src="/img/Sandwich.webp" alt="Placeholder Image">
+                    <h3>Sandwiches</h3>
+                </div>
+                <div class="col-right">
+                    <button><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+            </div>
+            <div class="collapsible-content" id="collapsibleContent4">
+                <ul>
+                    <li>
+                        <div>
+                            <img src="/img/Nonveg.png" alt="Placeholder Image">
+                            <span> Golden BBQ Chicken Sandwich</span>
+                        </div>
+                        <span>₹ 139</span>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="/img/Nonveg.png" alt="Placeholder Image">
+                            <span> Classic Chickenn Sandwich</span>
+                        </div>
+                        <span>₹ 169</span>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="/img/Nonveg.png" alt="Placeholder Image">
+                            <span> Spicy Chicken Sandwich</span>
+                        </div>
+                        <span>₹ 169</span>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="/img/Nonveg.png" alt="Placeholder Image">
+                            <span> Bacon & Cheese Chicken SandWich<br>
+                              <p>  (Classic & Spicy Bacon Cheese Chicken Sandwich)</p></span>
+                        </div>
+                        <span>₹ 159</span>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="/img/Nonveg.png" alt="Placeholder Image">
+                            <span> Golden BBQ Bacon & Cheese Chicken Sandwich</span>
+                        </div>
+                        <span>₹ 199</span>
+                    </li>
+                </ul>
+
+
+
+            </div>
+        </div>
+        <!-- Second collapsible section 5 -->
+        <div class="main_one">
+            <div class="collapsible-container" onclick="toggleCollapsible('collapsibleContent5')">
+                <div class="col-left">
+                    <img src="/img/Beverage.webp" alt="Placeholder Image">
+                    <h3>Beverages</h3>
+                </div>
+                <div class="col-right">
+                    <button><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+            </div>
+            <div class="collapsible-content" id="collapsibleContent5">
+                <ul>
+                    <li>
+                        <div>
+                            <img src="/img/Nonveg.png" alt="Placeholder Image">
+                            <span>Coca-Cola Zero Sugar</span>
+                        </div>
+                        <span>₹ 99</span>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="/img/Nonveg.png" alt="Placeholder Image">
+                            <span>Fanta Orange<span>
+                        </div>
+                        <span>₹ 99</span>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="/img/Nonveg.png" alt="Placeholder Image">
+                            <span>Sprite</span>
+                        </div>
+                        <span>₹ 99</span>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="/img/Nonveg.png" alt="Placeholder Image">
+                            <span>Mango Lemonade</span>
+                        </div>
+                        <span>₹ 99</span>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="/img/Nonveg.png" alt="Placeholder Image">
+                            <span>Mountain Dew</span>
+                        </div>
+                        <span>₹ 99</span>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="/img/Nonveg.png" alt="Placeholder Image">
+                            <span>7UP</span>
+                        </div>
+                        <span>₹ 99</span>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+        <!-- Second collapsible section 6 -->
+        <div class="main_two">
+            <div class="collapsible-container" onclick="toggleCollapsible('collapsibleContent6')">
+                <div class="col-left">
+                    <img src="/img//Tenders.webp" alt="Placeholder Image">
+                    <h3>Tenders</h3>
+                </div>
+                <div class="col-right">
+                    <button><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+            </div>
+            <div class="collapsible-content" id="collapsibleContent6">
+                <ul>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"><span> 3Pc Tenders</span></div><span>₹ 299</span>
+                    </li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"><span> 5Pc Tenders</span></div><span>₹ 399</span>
+                    </li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"><span> 8Pc Tenders Family Meal</span></div><span>₹ 499
+                    </span>
+                </ul>
+
+
+            </div>
+        </div>
+
+        <!-- First collapsible section 7 -->
+        <div class="main_one">
+            <div class="collapsible-container" onclick="toggleCollapsible('collapsibleContent7')">
+                <div class="col-left">
+                    <img src="/img/Desert.webp" alt="Placeholder Image">
+                    <h3>Desserts</h3>
+                </div>
+                <div class="col-right">
+                    <button><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+            </div>
+            <div class="collapsible-content" id="collapsibleContent7">
+
+                <ul>
+
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Cinamon Apple Pie</div><span>₹ 99</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Caramel Apple Cheesecake Cup</div><span>₹ 149</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Chocolate Chip Biscuits</div><span>₹ 149</span></li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- Second collapsible section 8 -->
+        <div class="main_two">
+            <div class="collapsible-container" onclick="toggleCollapsible('collapsibleContent8')">
+                <div class="col-left">
+                    <img src="/img/Family.webp" alt="Placeholder Image">
+                    <h3>Family Meals</h3>
+                </div>
+                <div class="col-right">
+                    <button><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+            </div>
+            <div class="collapsible-content" id="collapsibleContent8">
+                <ul>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> 18Pc Wing Group Pack</div><span>₹ 699</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Signature Chicken Family Meal</div><span>₹ 599</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Tenders Family Meal</div><span>₹ 499</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Chicken Popcorn Only</div><span>₹ 299</span></li>
+                </ul>
+
+
+            </div>
+        </div>
+        <!-- First collapsible section 9 -->
+        <div class="main_one">
+            <div class="collapsible-container" onclick="toggleCollapsible('collapsibleContent9')">
+                <div class="col-left">
+                    <img src="/img/Kids.webp" alt="Placeholder Image">
+                    <h3>Kids Meals</h3>
+                </div>
+                <div class="col-right">
+                    <button><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+            </div>
+            <div class="collapsible-content" id="collapsibleContent9">
+
+                <ul>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> 4Pc Boneless Kids Meal</div><span>₹ 300</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Mac & Cheese Kids Meal</div><span>₹ 240</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> 1Pc Leg Kid's Meal</div><span>₹ 99</span></li>
+                </ul>
+
+            </div>
+        </div>
+        <!-- Second collapsible section 10 -->
+        <div class="main_two">
+            <div class="collapsible-container" onclick="toggleCollapsible('collapsibleContent10')">
+                <div class="col-left">
+                    <img src="/img/Sunday.webp" alt="Placeholder Image">
+                    <h3>Sunday Scaries</h3>
+                </div>
+                <div class="col-right">
+                    <button><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+            </div>
+            <div class="collapsible-content" id="collapsibleContent10">
+                <ul>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Classic Chicken Sandwich</div><span>₹ 120</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Classic Bacon & Cheese Chicken Sandwich</div><span>₹ 140</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> 3Pc Tenders</div><span>₹ 210</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Cajum Fries</div><span>₹ 180</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> 4Pc Chicken Wings</div><span>₹ 240</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Chovolate Chip Biscuits</div><span>₹ 120</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Sauce</div><span>₹ 60</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Medium Coca Cola</div><span>₹ 80</span></li>
+                </ul>
+
+            </div>
+        </div>
+         <!-- First collapsible section -->
+         <div class="main_one">
+            <div class="collapsible-container" onclick="toggleCollapsible('collapsibleContent11')">
+                <div class="col-left">
+                    <img src="/img/Sauces.webp" alt="Placeholder Image">
+                    <h3>Dipping Sauces</h3>
+                </div>
+                <div class="col-right">
+                    <button><i class="fa-solid fa-angle-down"></i></button>
+                </div>
+            </div>
+            <div class="collapsible-content" id="collapsibleContent11">
+
+                <ul>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Wing Flavor Sauces</div><span>₹ 60</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Bold BBQ Sauce</div><span>₹ 70</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Buttermilk Ranch Sauce</div><span>₹ 80</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Sweet Heat Sauce</div><span>₹ 60</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Wild Honey Mustard</div><span>₹ 80</span></li>
+                    <li>
+                        <div><img src="/img/Nonveg.png" alt="Placeholder Image"> Cocktail Sauce</div><span>₹ 80</span></li>
+                </ul>
+            </div>
+        </div>
+        
+
+    </div>
+
+    <!-- About Us Section -->
+    <section id ="about-us" class="about-section">
+        <h2>About Popeyes Louisiana Kitchen</h2>
+        <p>From a single restaurant in 1972 to over 4,300 locations worldwide, Popeyes Louisiana Kitchen has been on an
+            incredible journey. We began with a dream to serve the best fried chicken, and today, our bold, soulful
+            flavors rooted in Louisiana traditions continue to turn any meal into a celebration. Let’s party NOLA style!
+        </p>
+
+        <h3>Our Heritage</h3>
+        <p>Founded by Al Copeland in 1972, Popeyes® revolutionized fast food with New Orleans-style fried chicken. Our
+            menu, inspired by Cajun and Creole flavors, features spicy chicken, chicken tenders, fried shrimp, and other
+            regional delights. With over 2,700 locations globally, we’re proud to be a Louisiana legend, committed to
+            authentic, high-quality food that brings people together.</p>
+    </section>
+
+
+    <!-- Footer -->
+    <div id ="contact">
+        <footer>
+            <div class="footer-content">
+                <div class="footer-top">
+                    <div class="company-info">
+                        <img src="/img/logo.png" alt="Popeyes Logo">
+                        <address>
+                            Popeyes Restaurant<br>
+                            1234 Chicken Street<br>
+                            New Orleans, LA 70112<br>
+                            <a href="tel:+1234567890">(123) 456-7890</a><br>
+                            <a href="https://maps.google.com" target="_blank">MAP / DIRECTIONS</a>
+                        </address>
+                    </div>
+                    <div class="footer-links">
+                        <h4>Sitemap</h4>
+                        <ul>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#">Locations</a></li>
+                            <li><a href="#">Tract Order</a></li>
+                            <li>
+                                <a href="https://docs.google.com/forms/d/1YQP0GJQr07R3MXdFBtL3fdKIMcjsxU6vU3TJP1_nqEo/edit?usp=drivesdk" target="_blank">Contact Us</a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/mdfaizaanalam" target="_blank">
+                                    <i class="fa-brands fa-square-github" style="font-size: 30px; margin-right: 15px;"></i></a>
+
+                                <a href="https://www.linkedin.com/in/mdfaizaanalam/" target="_blank">
+                                    <i class="fa-brands fa-linkedin" style="font-size: 30px;"></i>
+                                </a>
+                            </li>
+                            
+                            
+                        </ul>
+                    </div>
+                    <div class="newsletter-signup">
+                        <h4>Want Our Best Deals?</h4>
+                        <p>Subscribe to our newsletter for exclusive offers and news.</p>
+                        <form>
+                            <input type="email" placeholder="Your E-mail">
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2024 Popeyes Restaurant. All rights reserved. <a href="#">Privacy</a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
